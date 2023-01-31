@@ -9,3 +9,7 @@ function myFunction(){
     })
     console.log(values2);
 }
+
+function newFunction(){
+    console.log("Hello GitHub")
+}
