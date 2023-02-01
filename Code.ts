@@ -21,7 +21,7 @@ function thisIsNewFunction(){
     const range = sheet.getRange('A1:A');
     const values = range.getValues();
     const values2 = values.filter(function(value){
-        return value[0] !== '';
+        return value[0] !== 'test';
     })
     console.log(values2);
 }
