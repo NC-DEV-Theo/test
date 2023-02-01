@@ -25,3 +25,10 @@ function thisIsNewFunction(){
     })
     console.log(values2);
 }
+
+function thisIsNewFunction2(){
+    const SS = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = SS.getSheetByName('Sheet1');
+    if(!sheet) throw new Error('Sheet1 not found');
+    sheet.getRange(2,1, sheet?.getMaxRows(), sheet?.getMaxColumns()).clearContent()
+}
